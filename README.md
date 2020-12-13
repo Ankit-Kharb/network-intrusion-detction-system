@@ -1,2 +1,2 @@
 # network-intrusion-detction-system
-To run the app ::kharb.pythonanywhere.com
+To run the app :: <https://kharb.pythonanywhere.com>
