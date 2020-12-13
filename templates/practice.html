@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dataset Description</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/sty.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="container">
+  <h1>NSL - KDD 1999 Dataset </h1>
+</div>
+</header>
+<br/>
+<br/>
+<div class="container">
+	<section id = "main">
+    <p>
+	The KDD 1999 dataset was developed by the MIT Lincoln
+	Labs and was extensively used by researchers during the
+	last decade. The entire dataset is very large in size and
+	contains many attributes variables. Therefore to improve the
+	machine learning computation, 10 % of it was extracted and
+	adopted as training dataset in the intrusion detection process.
+	However, some inherent drawback was made about this
+	dataset. The KDD 99 contains an important quantities
+	of redundant records which has as consequence to prevent the
+	learning algorithm to perform well.To resolve some issues found
+	in the previous KDD 99, an improved version was created, the 
+	NSL-KDD dataset.The classes or labels in the NSL KDD dataset are divided
+    into four categories which represent the attack class and one as
+    normal traffic.
+    </p>	
+	</section>
+	<br/>
+	<aside id = "sidebar">
+    <p>
+    <ol>
+    Four categories of Attacks:
+    <li>
+    Denial of Service (DoS): This attack aims to block or
+    restrict a computer system or network resources or services.
+    </li>
+    <li>
+    Probe: The intruder aims to scan for information
+    or vulnerabilities in a network or computer system which later
+    on will be used to launch attacks.
+    </li>	
+    <li>
+    Remote to Local (R2L): Here the intruder gain
+    remotely unauthorized access to a computer system over a
+    network by sending data packet to that system.
+    </li>
+    <li>
+    User to Root (U2R): Here the intruder gains access to
+    a user with normal privilege and later on try to access a user
+    with administrator or root privilege.
+    </li>
+    </ol>
+	</p>
+	</aside>
+    </div>
+   <div class="container">
+   	<ul id="main-1">
+   	The reason behind the use of this dataset 
+	are following relevant to mention:
+	<li>
+	Elimination of redundant records in the training set will
+    help our classifier to be unbiased towards more frequent records.
+	</li>
+	<li>
+	No presence of duplicate records in the test set,
+	therefore, the classifier performance will not be biased
+	by the techniques which have better detection rates on
+	the frequent records.
+	</li>
+	<li>
+	The training and test set contains both a reasonable
+	numbers of instances which is affordable for
+	experiments on the entire set without the need to
+	randomly choose a small portion.
+	</li>
+	</ul>
+   </div>
+ <br/>
+ <br/>
+ <div class="container">
+ <h4>NUMBER OF INSTANCES IN THE TRAINING SET</h4>
+ <table id = "main-2">
+  <tr>
+    <th>Attack Classes or Labels</th>
+    <th>Attack types (number of instances)</th>
+    <th>Total of instances</th>
+  </tr>
+  <tr>
+    <td>Denial of Service</td>
+    <td>back (956), land(18),neptune(41,214),
+    pod(201), smurf(2,646),teardrop(892)</td>
+    <td>45,927</td>
+  </tr>
+  <tr>
+    <td>Probe</td>
+    <td>satan(3,633),ipsweep(3,599),nmap(1,493), portsweep
+    (2,931)</td>
+    <td>11,656</td>
+  </tr>
+  <tr>
+    <td>R2L</td>
+    <td>guess_passwd(53),imap(658),phf(4), multihop(7),
+     warezmaster(20),warezclient(890)</td>
+    <td>16,42</td>
+  </tr>
+  <tr>
+    <td>U2R</td>
+    <td>buffer_overflow(30),loadmodule(9),rootkit(10), perl(3)</td>
+    <td>52</td>
+  </tr>
+</table>
+
+<br/>
+<br/>
+ <h4>NUMBER OF INSTANCES IN THE TEST SET</h4>
+ <table id = "main-2">
+  <tr>
+    <th>Attack Classes or Labels</th>
+    <th>Attack types (number of instances)</th>
+    <th>Total of instances</th>
+  </tr>
+  <tr>
+    <td>Denial of Service</td>
+    <td>back(359),neptune(4,657),apache2(737), pod(41),
+     smurf(665), teardrop(12),processtable(685),mailbomb(293)</td>
+    <td>74,60</td>
+  </tr>
+  <tr>
+    <td>Probe</td>
+    <td>satan(3,633),ipsweep(3,599),nmap(1,493), portsweep
+    (2,931)</td>
+    <td>11,656</td>
+  </tr>
+  <tr>
+    <td>R2L</td>
+    <td>guess_passwd(1,231),imap(307),multihop(18),
+    warezmaster(944),xlock(9), snmpguess(331),snmpgetattack(178),
+    httptunnel(133), sendmail(14), named(17)</td>
+    <td>31,91</td>
+  </tr>
+  <tr>
+    <td>U2R</td>
+    <td>Buffer_overflow(20),
+    loadmodule(2), xterm(13),rootkit(13), perl(2),sqlattack(2), ps(15)</td>
+    <td>67</td>
+  </tr>
+</table>
+
+	
+</div>
+ <br/>
+ <br/>
+  <div class="container">
+  <ul id="main-1">
+	The training and test set contain both 41 features labeled as normal traffic or specific
+	attack types, all these features are subdivided in 4 categories basic features,time-based traffic features, content  features and host-based traffic features.
+  	<li>
+  	<strong>Basic features:</strong> It contains all features which derived from TCP/IP connection such as Protocol_type, Service, duration and etc.	
+  	</li>
+  	<li>
+  	<strong>Time-based traffic features:</strong> It is used to capture those features which are mature over a 2 second temporal window (e.g. count, srv_count, Rerror_rate and etc.)
+  	</li>
+  	<li>
+	<strong>Content features:</strong> Those features use domain
+	knowledge to access the payload of the original TCP
+	packets (e.g. hot, num_root, is_guest_login and etc.)
+  	</li>
+  	<li>
+	<strong>Host-based traffic features:</strong> all attacks which span
+	longer than 2 second intervals that have the same
+	destination host as the current connection are access
+	using these features (e.g. dst_host_count,
+	dst_host_srv_count and etc.)
+  	</li>
+  </ul>
+  </div>
+
+</body>
+</html>

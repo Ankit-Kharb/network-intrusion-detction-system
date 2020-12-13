@@ -1,0 +1,182 @@
+body
+{
+	background-color: #e3f2fd;
+	margin: 0;
+}
+.container{
+
+	width:80%;
+	background-color: white;
+	padding-left: 70px;
+}
+
+#pred
+{
+  text-align: center;
+}
+
+#pre
+{
+	text-align: center;
+	color: grey;
+	padding-left: 120px;
+}
+#main
+{
+	background-color: #0d47a1;
+	line-height: 1.6em;
+	color: black;
+	font-family: Arial;
+	font-size: 30px;
+	margin: 0;
+}
+.submit1
+{
+  width:30%;
+  padding-left:170px;
+  float:auto;
+}
+
+.container1
+{
+	width:90%;
+	margin:auto;
+	overflow: hidden;
+}
+.container4
+{
+	width:100%;
+	margin:auto;
+	overflow: hidden;
+}
+#main-1
+{
+  float:left;
+  width:70%;
+}
+
+#center1{
+	float: auto;
+	padding-top: 8px;
+	opacity: 0.9;
+	padding-bottom: 8px;
+}
+#container2
+{
+  float:left;
+  width:50%;
+}
+#container3
+{
+  float:left;
+  width:50%;
+}
+#main-3
+{
+  float:right;
+  width:30%;
+}
+
+
+.form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}

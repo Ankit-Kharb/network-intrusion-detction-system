@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attack Classification</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+</head>
+<body>
+    <header id = "main">
+    <div class="container">
+    	<h4> Attack Type Classification</h4>
+    </div>
+    </header>
+    <br/>
+    <br/>
+    <div class="container1">
+    <section id="main-1">
+     <div class="form-style-5">
+     <div class="container4">
+     <form action="{{ url_for('analyze')}}" method="POST">	
+		<sidebar id="container2">
+			<fieldset>
+			<legend><span class="number">1</span>Basic Features</legend> 
+			<input type="text" name="protocol" placeholder="Protocol *">
+			<input type="text" name="service" placeholder="Service *">
+			<input type="text" name="flag" placeholder="Flag *">
+
+	   
+			</fieldset>
+			<fieldset>
+			<legend><span class="number">2</span>Time Features</legend>
+			<input type="text" name="count" placeholder="Count *">
+			<input type="text" name="serv_count" placeholder="Server count *">
+			<input type="text" name="error_rate" placeholder="Error rate *">
+			</fieldset>
+		<!--	<input type="submit" value="Apply" />-->
+	</sidebar>
+
+		<sidebar id="container3">
+			<fieldset>
+			<legend><span class="number">3</span>Content Features</legend> 
+			<input type="text" name="src_bytes" placeholder="Source bytes *">
+			<input type="text" name="num_root" placeholder="Num root *">
+			<input type="text" name="is_guest_login" placeholder="Guest login *">
+			</fieldset>
+
+			<fieldset>
+			<legend><span class="number">4</span>Host Features</legend> 
+			<input type="text" name="dst_host_count" placeholder="Host count *">
+			<input type="text" name="dst_host_srv_count" placeholder="Host server count*">
+			<input type="text" name="dest_bytes" placeholder="Dest bytes *">
+			</fieldset>
+
+	</sidebar>
+
+	<div class="submit1">
+			<input id="center1" type="submit" value="submit" />
+	</div>
+		</form>
+	</div>	
+	 </div>
+    </section>
+    
+
+    <section id = "main-3">
+    <div class="form-style-5" >	
+    <h1 id = "pred">Prediction</h1>
+	    	<h2 id="pre"> {{ result_prediction }} </h2>	
+    
+    </div>
+    </section>
+    </div></div>
+</body>
+</html>

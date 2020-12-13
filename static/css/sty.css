@@ -1,0 +1,79 @@
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-image:url('/static/imgs/image1.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+/* Header/Logo Title */
+#header {
+  background-image:url('/static/imgs/image2.jpg');
+  padding: 2px;
+  text-align: left;
+  padding-left: 50px;
+  /*background:   #aab7b8  ;*/
+  color: white;
+  font-family:Arial;
+  line-height: :3em;
+  font-size: 15px;
+  color: black;
+}
+#main{
+    float: left;
+    color:black;
+    width:60%;
+    font-size: 20px;
+    padding:30px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    }
+ #main-1{
+    float: left;
+    color:black;
+    width:100%;
+    font-size: 20px;
+    padding:30px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    }
+   #main-2
+   {
+     font-size: 20px;
+   }
+ #sidebar
+    {
+    float: right;
+    width:40%;
+    background: #333;
+    opacity: 0.8; 
+    line-height: 1.6em;
+    font-size: 17px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+/* Page Content */
+.content {
+	padding:20px;
+}
+.container{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
